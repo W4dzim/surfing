@@ -44,32 +44,85 @@
 }
 
 .menu {
-
-    &__list {
-        text-align: center;
-
-        a {
-            color: #fff;
-            span{
-                display: block;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 14px;
-                letter-spacing: 3px;
-                padding-top: 6px;
-                margin-bottom: 37px;
-            }
+    padding-top: 40px;
+    a {
+        color: #fff;
+        span{
+            display: block;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 3px;
+            padding-top: 6px;
+            margin-bottom: 20px;
         }
-    }
+    }    
 }
 
 .header {
 
-    &__search {}
+    &__search {
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
 
-    &__date {}
+    &__date {
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 64px;
+        span {
+            padding-top: 15px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 1.4px; 
+            margin-bottom: 30px;
+            display: block;
+        }
+    }
 
-    &__location {}
+    &__location {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1.05px;    
+        position: relative;
+        padding-left: 19px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 11px;
+            height: 13px;
+            background-image: url('../img/marker.svg');
+            left: 0;
+            top: 0;
+        }
+
+    }
+    &__map {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    &__arrows {
+        position: absolute;
+        bottom: 30px;
+        left: 210px;
+        z-index: 1;
+    }
+}
+.line-animation{
+    stroke-dashoffset: 557;
+    stroke-dasharray: 557;
+    animation: animdash 5s linear infinite 6s;
+}
+
+@keyframes animdash{
+    100%{
+        stroke-dashoffset: 0; 
+    }
 }
 
 
@@ -157,6 +210,7 @@
         line-height: 19px;
     }
 }
+
 
 
 
