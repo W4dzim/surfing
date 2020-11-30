@@ -515,15 +515,16 @@
 
 
 
-.travel {
+.holder {
     background: url('../img/travel-bg.png') bottom right no-repeat;
+    margin-bottom: 300px;
     .slider-arrows {
         top: 225px;
         opacity: .5;
     }
 }
 
-.travel-slider {
+.holder-slider {
     &__head {
         background-repeat: no-repeat;
         background-position: top left;
@@ -559,7 +560,7 @@
     }
 }
 
-.travel-slider__info {
+.holder-slider__info {
     display: flex;
     justify-content: space-around;
 
