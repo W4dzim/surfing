@@ -629,7 +629,9 @@
     background-image: url(../img/shop-bg.png);
     background-repeat: no-repeat;
     background-position: right center;
-    // padding: 60px 0 0 132px;
+    .slider-arrows {
+        opacity: 0.25;
+    }
 }
 
 .shop__slider {
@@ -739,15 +741,14 @@
     left: -6px;
 }
 
-.surfboard__position--3 {
+.surfboard__position--3 {    
     bottom: 70px;
     left: 52px;
-
     .surfboard-box__content {
         padding-left: 0;
         padding-right: 104px;
         top: -15px;
-        right: 495px;
+        left: -400px;
         &::before {
             content: '';
             position: absolute;
@@ -755,6 +756,7 @@
             height: 1px;
             background-color: #fff;
             right: 0;
+            left: auto;
             top: 50%;
         }    
     }
@@ -816,7 +818,27 @@
 
 }
 
+.footer {
+    text-align: center;
+    padding: 285px 0 34px;
+    .btn {
+        span {
+            padding-right: 17px;
+        &::after {
+            display: none;
+        }
+        }
+    }
+}
 
+.footer__copy {
+    padding-top: 27px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px; 
+    opacity: 0.5;    
+}
 
 
 
