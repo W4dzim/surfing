@@ -30,9 +30,6 @@
         text-align: center;
     }
 
-
-    &__slider {}
-
     &__slider-item {
         height: 100vh;
         background: url('../img/header-bg.jpg') center/cover no-repeat;
@@ -856,4 +853,4 @@
 
 
 
-// @import 'media';
+@import 'media';
