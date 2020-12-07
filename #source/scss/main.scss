@@ -335,13 +335,17 @@
 }
 
 .title {
-    span {
+    div {
         font-weight: 800;
         font-size: 200px;
         color: rgba(#fff, .02);
         position: relative;
         display: inline-block;
         transform: translateX(-50px);
+    }
+
+    span {
+        display: inline-block;
     }
 
     h3 {
